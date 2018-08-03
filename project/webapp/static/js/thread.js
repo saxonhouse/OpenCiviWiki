@@ -1185,6 +1185,7 @@ cw.EditThreadView = BB.View.extend({
                                     _this.parentView.model.set('location', new_data.location);
                                     _this.parentView.model.set('image', response2.image);
                                     _this.parentView.threadBodyRender();
+                                    _this.parentView.renderBodyContents();
                                     _this.parentView.threadWikiRender();
 
                                 },
@@ -1221,7 +1222,7 @@ cw.EditThreadView = BB.View.extend({
                                     _this.parentView.model.set('location', new_data.location);
                                     _this.parentView.model.set('image', response2.image);
                                     _this.parentView.threadBodyRender();
-                                    console.log('doing extra bit')
+                                    _this.parentView.renderBodyContents();
                                     _this.parentView.threadWikiRender();
                                 },
                                 error: function(e){
@@ -1252,7 +1253,7 @@ cw.EditThreadView = BB.View.extend({
                                     _this.parentView.model.set('state', new_data.state);
                                     _this.parentView.model.set('location', new_data.location);
                                     _this.parentView.threadBodyRender();
-                                    console.log('doing extra bit')
+                                    _this.parentView.renderBodyContents();
                                     _this.parentView.threadWikiRender();
                                 },
                                 error: function(e){
@@ -1276,7 +1277,7 @@ cw.EditThreadView = BB.View.extend({
                         _this.parentView.model.set('state', new_data.state);
                         _this.parentView.model.set('location', new_data.location);
                         _this.parentView.threadBodyRender();
-                        console.log('doing extra bit')
+                        _this.parentView.renderBodyContents();
                         _this.parentView.threadWikiRender();
                     }
 
